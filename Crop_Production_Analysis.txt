@@ -1,0 +1,28 @@
+Exercise 1. Import numpy as np and see the version
+np.__version__
+
+Exercise 2. How to create a 1D array?
+arr = np.array([1,2,3,4,5,6])
+print(arr)
+Output:- [1 2 3 4 5 6]
+
+Exercise 3. How to create a boolean array?
+arr = np.array([True, False, True, False, False, True, False])
+print(arr)
+Output:- [ True False  True False False  True False]
+
+arr = np.array([1,0,1,0,44,0,2], dtype= bool)
+print(arr)
+Output:- [ True False  True False  True False  True]
+
+Exercise 4: How to extract items that satisfy a given condition from 1D array?
+arr = np.array([1, 2, 3, 4, 5])
+filtered_arr = arr[arr > 3]
+print(filtered_arr)
+Output:- [4 5]
+
+Exercise 5. How to replace items that satisfy a condition with another value in numpy array?
+arr = np.array([1, 2, 3, 4, 5])
+arr[arr > 3] = 0
+print(arr)
+Output:- [1 2 3 0 0]
